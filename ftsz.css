@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap');
+
+/* em-RELATIVE depends on parent
+1em = 16px default browser style;
+1em = base value */
+
+/* ctrl + /를 누르면 한번에 각주가 된다. */
+
+/* html { 
+    font-size: 16px;
+}
+html : root라 한다.*/
+
+body {
+    text-align: right;
+}
+
+.relative {
+    font-size: 2rem;
+}
+
+.absolute {
+    font-size: 32px;
+}
+
+/* rem - RELATIVE depends on :root
+1rem = 16 px default browser style; */
+
+.fsfz {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* property 입력 후 자동 추천 주어야하는 데 안줄 때 : press ctrl  + space bar  */
+.main {
+    font-family: 'Bebas Neue';
+    text-align: center;
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.subheading {
+    font-style: normal;
+    text-align: left;
+}
+
+.p1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.p2 {
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: left;
+    text-indent: 50px;
+}
+
+
+/* 구글 폰트 새로 다운 받는 법 
+google font 접속 - 원하는 글자체 클릭. select - selected families 에서 use of the web에 나온 방식 사용
+head에 연결 링크 적기  + css 파일에서 해당 폰트 패밀리 입력. 
+
+link를 거는 방식도 있고, import 하는 방식도 있다. 
+전자는 html 파일의 head 부분에 복붙, import 는 css 파일에 @import~~~를 복붙.*/
+
+
+
+/* font-weight : 폰트를 두껍게
+font-style :  */

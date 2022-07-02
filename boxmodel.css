@@ -1,0 +1,77 @@
+/* 학습 목표
+.box {
+    background: red;
+    width: 50vw;
+    height: 50vh;
+} */
+/* border-radius
+neagative margin 
+outline
+offset*/
+/* * { 
+    margin: 0%;
+}*/
+
+h1 {
+
+    background: blueviolet;
+    margin-bottom: 0px;
+    /* 
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 150px;
+    */
+    padding: 20px;
+    margin: 50px;
+    /* 
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(80, 48, 224);
+    */
+    /* 
+    border-bottom-style: solid;
+    border-bottom-width: 30px;
+    border-bottom-color: rgb(214, 83, 197);*/
+    border: solid rgb(218, 87, 218) 10px;
+    border-radius: 20px;
+}
+
+p {
+    background: yellowgreen;
+    /* padding: 50px */
+    /* padding: 30px 200px; */
+    /* short-cut에 해당 : 두 픽셀 값 입력 시, 처음 값은 상하의 padding 값 / 두번 째 값은 좌우의 padding 값에 해당. */
+    /* padding: 20px 50px 20px 100px */
+    /* 상, 우, 하,좌 */
+    padding: 20px;
+    margin: 50px;
+    /* margin-top: -50px 처럼 마이너스 값도 가능하다. (붙음) */
+    border: solid green 10px;
+}
+
+.buttons {
+    margin: 3rem;
+}
+
+a {
+    background: rgb(48, 204, 152);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    /* 좌측: 상하 , 우측 : 좌우*/
+    color: rgb(44, 39, 39);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+#b1 {
+    border: 0.2rem solid rgb(23, 105, 78);
+}
+
+#b2 {
+    /* outline-width: 0.2rem; */
+    /* outline-style: solid; */
+    /* outline-color: rgb(23, 105, 78)  */
+    outline: 0.2rem solid rgb(36, 165, 122);
+    outline-offset: -8px;
+}

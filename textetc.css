@@ -1,0 +1,49 @@
+/* line-height
+letter-spacing
+word-spacing
+text-transform
+text-decoration */
+
+a {
+    font-size: 40px;
+    text-decoration: none;
+}
+
+body {
+    text-transform: uppercase;
+}
+
+h1 {
+    text-transform: lowercase;
+    text-decoration: line-through;
+}
+
+.p1 {
+    line-height: 1.5em;
+}
+
+.p2 {
+    letter-spacing: 5px;
+    text-decoration: overline;
+    line-height: 2rem;
+}
+
+.p3 {
+    word-spacing: 20px;
+    text-decoration: underline;
+}
+
+
+/*  (글자체 가져오기 연습)
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap');
+
+h1 {
+    font-family: 'Jua', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder
+}
+ */

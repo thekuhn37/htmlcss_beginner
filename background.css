@@ -1,0 +1,64 @@
+/* last rule order
+같은 대상에 대한 명령이 여러개 있다면 마지막 명령이 적용된다.  */
+/* background-size */
+/* background-position */
+/* background-attachment */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+div {
+    min-height: 100vh;
+    color: #c71919;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.sample-button {
+    background: url('./img/barbell2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-position: 100% 100%; */
+    /* background-position : top, bottom, left, right도 가능하지만, % 형태로  X,y축으로도 입력 가능  */
+    border: solid 10px red;
+    /* background-size: cover; */
+
+}
+
+
+
+.big-img {
+    background: url('./img/barbell.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 자주 쓰임.  - cover, no-repeat. */
+}
+
+
+.small-img {
+    background: url('./img/dumbellarm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* background-repeat: space; */
+    /* background-repeat: round; */
+}
+
+.folder-img {
+    background: url('./img/squat.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* background-size : contain : Resize the background image to make sure it remains fully visible  
+background-size : cover : the image will fill the element while maintaining its aspect ratio 
+    - 틀에 꽉차게 자기를 맞추긴 함. */

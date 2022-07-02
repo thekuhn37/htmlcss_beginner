@@ -1,0 +1,20 @@
+/*  css파일에서 * + {}한 뒤 안의 내용을 바꾸면  */
+/* calc()
+perform math operations  + - * / 
+mix and match values */
+* {
+    margin: 0;
+}
+
+.navbar {
+    background: blue;
+    height: 100px;
+    color: rgb(187, 202, 235);
+    font-size: 3rem;
+}
+
+.banner {
+    background: skyblue;
+    min-height: calc(100vh - 100px);
+    /* 기호 좌우로 빈 스패이스 공간이 꼭 있어야 한다.  */
+}

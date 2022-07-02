@@ -1,0 +1,42 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+div {
+    min-height: 100vh;
+    font-size: 60px;
+    color: rgb(172, 167, 124);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.invitation {
+    background: url('./img/wedding-back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.schedule {
+    background: url('./img/wedding-flowers.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.picture {
+    background: url('./img/wedding-livingroom.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+    background-color: antiquewhite;
+    background-attachment: fixed;
+}

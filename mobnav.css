@@ -1,0 +1,84 @@
+/* 
+(복습)
+Block : Top Bottom Margin Respected  
+Inline : Top Bottom Margin Not Respected
+학습목표
+Mobile Navigation Bar
+List-style-type : property
+descendant selectors*/
+/* 
+div {
+    background: blue;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+/* tag의 새끼 tag를 selector로 하고 싶을 때는, parent tag 이름 먼저 쓰고, 그다음에 하위 태그를 
+selector로 표기하면 된다. */
+ul li {
+    list-style-type: none;
+    /* 리스트 앞에 있는 동그라미나 네모 등 기호를 바꿀 수 있음. None : 표시 안함.  */
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: rgb(41, 39, 39);
+    color: rgb(248, 248, 242);
+    display: block;
+    padding: 10px 10px;
+    width: 200px;
+    margin: 5px;
+}
+
+/* block element는 top, bottom margin, padding 을 인정하지만,
+inline element는 그런걸 인정하지 않는다. 따라서 block element로 바꿔주는 게 필요하다. */
+
+/* inline-block */
+
+a {
+    font-size: 20px;
+    background: rgb(194, 194, 155);
+    margin: 30px;
+    padding: 30px;
+    display: inline-block
+}
+
+
+.box-1,
+.box-2,
+.box-3 {
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.box-1 {
+    background: red;
+    padding: 20px;
+    box-sizing: border-box;
+    /* border-box를 쓰면 기존에 정한 사이즈를 기준으로 padding 값을 오히려 줄어들게 한다. */
+}
+
+.box-2 {
+    background: blue;
+}
+
+.box-3 {
+    background: green;
+    padding: 20px;
+}
