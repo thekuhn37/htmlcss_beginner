@@ -1,0 +1,34 @@
+div {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+.one {
+    background: linear-gradient(rgb(109, 131, 255), rgb(255, 3, 142))
+}
+
+.two {
+    background: linear-gradient(to left, blue, yellow, rgb(133, 189, 133))
+}
+
+/* to top, to bottom(default), to left ... */
+/* 색깔 개수 2개 이상 가능, 색깔들 넣으면서 콤마로 연결해주면 됌. */
+.three {
+    background: linear-gradient(200deg, rgb(109, 131, 255), rgb(255, 3, 142))
+}
+
+/* 0~360 degree -방향의 각도를 숫자로 정해줄 수 있다. 더 더양하게 선형 그래디언트 변형 가능 */
+.four {
+    background: linear-gradient(to top right, rgb(109, 131, 255), rgb(255, 3, 142))
+}
+
+/* 다양한 변주가 가능 */
+.five {
+    background: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 200, 150, 0.9));
+}
+
+/* rgba : red green blue + 네번째 숫자 : opacity */
+.six {
+    background: linear-gradient(200deg, rgba(0, 0, 0, 0.2), rgba(0, 200, 150, 0.9));
+}
