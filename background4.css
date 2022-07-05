@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* 이미지와 텍스트를 가운데로 오게 하는 properties. -display부터~*/
+    font-size: 60px;
+    color: orange;
+}
+
+.banner {
+    background: url('./img/wedding-back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 18, 235, 0.2)), url('./img/wedding-back.jpg') center/cover no-repeat fixed;
+    /* ,가 중요!!!! */
+    /* 회색을 쓰면 더 어둡게 만들 수 있다. */
+    /* background - 를 잔뜩 안쓰고 더 짧게 원하는 효과들을 넣을 수 있다.
+    center/ 여기까지는 순서 그대로 지켜야 함.
+    그 후에 cover no-repeat fixed는 순서 달라도 상관 없다.  */
+
+}
