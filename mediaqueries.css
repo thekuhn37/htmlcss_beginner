@@ -1,0 +1,50 @@
+/* position static 은 기본 값이다.  */
+/* position : static */
+/* position : relative */
+/* position : absolute */
+/* position : fixed - 네비게이션 버튼을 위해 자주 사용된다. */
+
+button {
+    background: rgb(240, 94, 94);
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+
+div {
+    border: 3px solid rgb(6, 65, 40);
+    background: yellowgreen;
+    margin-top: 40px;
+    text-align: right;
+    /* position : static 은 default 이다.  */
+    position: relative;
+}
+
+.one {
+    background: rgb(121, 121, 163);
+    /* text-align: left; */
+    /* position relative의 예시 */
+    /* position: relative; */
+    /* top: 50px; */
+    /* left: 20rem; */
+    /* right: 50%; */
+    /* bottom: 80px; */
+}
+
+.two {
+    background: rgb(20, 138, 173);
+    /* position: relative; */
+}
+
+.special {
+    background: lightcoral;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    /* position : relative인 selector를 기준으로 absolute한 위치 값을 갖는다.  */
+}

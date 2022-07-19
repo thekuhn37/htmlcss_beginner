@@ -1,0 +1,11 @@
+.banner {
+    border: 5px solid red;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.one {
+    float: left;
+    height: 150px;
+    margin-right: 50px;
+}

@@ -1,5 +1,11 @@
+/*  background : linear gradient
+
+https: //www.colorzilla.com/gradient-editor/
+에서는 원하는 색깔을 만들고 그것을 코드로 긁어 가져올 수 있다. 
+*/
+
 div {
-    width: 150px;
+    min-width: 100vw;
     height: 150px;
     margin: 5px;
 }
@@ -31,4 +37,16 @@ div {
 /* rgba : red green blue + 네번째 숫자 : opacity */
 .six {
     background: linear-gradient(200deg, rgba(0, 0, 0, 0.2), rgba(0, 200, 150, 0.9));
+}
+
+.zilla {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff3232+0,f4ff30+46,aaffe4+100&0.65+0,0.96+100 */
+    background: -moz-linear-gradient(-45deg, rgba(255, 50, 50, 0.65) 0%, rgba(244, 255, 48, 0.79) 46%, rgba(170, 255, 228, 0.96) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 50, 50, 0.65) 0%, rgba(244, 255, 48, 0.79) 46%, rgba(170, 255, 228, 0.96) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 50, 50, 0.65) 0%, rgba(244, 255, 48, 0.79) 46%, rgba(170, 255, 228, 0.96) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6ff3232', endColorstr='#f5aaffe4', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }

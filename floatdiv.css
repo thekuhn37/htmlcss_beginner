@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+.one {
+    float: left;
+    background: red;
+    height: 200px;
+    width: 33.33%;
+}
+
+.flowers {
+    float: left;
+    margin-right: 10px;
+}
+
+p {
+    clear: left;
+}
+
+.two {
+    float: left;
+    background: rgb(115, 89, 177);
+    height: 200px;
+    width: 33.33%;
+}
+
+.three {
+    float: left;
+    background: rgb(189, 183, 99);
+    height: 200px;
+    width: 33.33%;
+}
+
+ */
+
+
+div {
+    float: left;
+    height: 300px;
+    width: 33.33%;
+
+}
+
+.one {
+    background: red;
+}
+
+.two {
+    background: rgb(115, 89, 177);
+}
+
+.three {
+    background: rgb(189, 183, 99);
+}
+
+.four {
+    background: rgb(43, 129, 185);
+}
+
+h1 {
+    clear: both;
+}
