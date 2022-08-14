@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>touchslider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="touchslider.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="./img/icon/menu.svg" alt="menu" class="menu-icon">
+            <p>SAVE THE DATE</p>
+            <img src="./img/icon/mute.svg" alt="mute" class="mute-icon">
+        </div>
+        <div class="main-text">
+            <h2>Gallery</h2>
+            <small>The pics for our great memories which bring us to the great marriage.
+            </small>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/touchslider/livingroom.png" alt="1">
+                    <div class="info">
+                        <h3>B-day Party</h3>
+                        <p>@Shin Gil</p>
+                        <a href="#">2021</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="./img/touchslider/hondae.png" alt="2">
+                    <div class="info">
+                        <h3>One summer night</h3>
+                        <p>@HongDae</p>
+                        <a href="#">2021</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="./img/touchslider/gym.png" alt="3">
+                    <div class="info">
+                        <h3>WorkOut</h3>
+                        <p>@Shin Gil</p>
+                        <a href="#">2022</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="./img/touchslider/sticker.png" alt="4">
+                    <div class="info">
+                        <h3>Photo Shot</h3>
+                        <p>@Donam</p>
+                        <a href="#">2022</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="./img/touchslider/flower.png" alt="5">
+                    <div class="info">
+                        <h3>Rosy Lady</h3>
+                        <p>@Donam</p>
+                        <a href="#">2021</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="./img/touchslider/shopping.png" alt="6">
+                    <div class="info">
+                        <h3>Model Couple</h3>
+                        <p>@Timesqure</p>
+                        <a href="#">2021</a>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="./img/touchslider/yoga.png" alt="7 ">
+                    <div class="info">
+                        <h3>Yoga Day</h3>
+                        <p>at Han River</p>
+                        <a href="#">2021</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="footer-menu">
+            <img src="./img/icon/home.svg" alt="">
+            <img src="./img/icon/user.svg" alt="">
+            <img src="./img/icon/share.svg" alt="">
+            <img src="./img/icon/back.svg" alt="">
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            centeredSlides: true,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+        });
+    </script>
+</body>
+
+</html>

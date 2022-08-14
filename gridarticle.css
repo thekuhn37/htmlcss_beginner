@@ -1,0 +1,25 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+}
+
+article>* {
+    grid-column: 2;
+    min-width: 0;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+article>figure {
+    grid-column: 1/-1;
+    margin: 20px 0;
+
+}

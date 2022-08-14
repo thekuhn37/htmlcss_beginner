@@ -1,50 +1,39 @@
-/* position static 은 기본 값이다.  */
-/* position : static */
-/* position : relative */
-/* position : absolute */
-/* position : fixed - 네비게이션 버튼을 위해 자주 사용된다. */
+/* media queries
+responsive design
+style elements on different screen sizes
+min-width --- starting from
+max-width --- up to 
+mobile first */
 
-button {
-    background: rgb(240, 94, 94);
-    font-size: 40px;
+body {
+    background: rgb(209, 211, 206);
+}
+
+.banner {
+    background: rgb(81, 162, 255);
+    border-radius: 20px;
+}
+
+h1 {
     color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
 }
 
+/* 띄어쓰기 조차도 매우 중요하다 !! */
+@media screen and (min-width:576px) {
+    body {
+        background: rgb(78, 81, 85)
+    }
 
-div {
-    border: 3px solid rgb(6, 65, 40);
-    background: yellowgreen;
-    margin-top: 40px;
-    text-align: right;
-    /* position : static 은 default 이다.  */
-    position: relative;
-}
+    .banner {
+        background: blueviolet;
+        border-radius: 20px;
+    }
 
-.one {
-    background: rgb(121, 121, 163);
-    /* text-align: left; */
-    /* position relative의 예시 */
-    /* position: relative; */
-    /* top: 50px; */
-    /* left: 20rem; */
-    /* right: 50%; */
-    /* bottom: 80px; */
-}
-
-.two {
-    background: rgb(20, 138, 173);
-    /* position: relative; */
-}
-
-.special {
-    background: lightcoral;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    /* position : relative인 selector를 기준으로 absolute한 위치 값을 갖는다.  */
+    h1 {
+        color: black;
+        font-size: 60px;
+    }
 }

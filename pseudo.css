@@ -1,0 +1,8 @@
+/* 
+pseudo elements :: before :: CONTENT not element
+content :'' ---required
+img --- does not required
+*/
+
+
+p::before {}

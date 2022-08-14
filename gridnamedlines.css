@@ -1,0 +1,54 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-gap: 3px;
+    grid-template-columns: [main-start]1fr [content-start] 5fr [content-end main-end];
+    /* named line을 쓸때는 이 방식의 레이아웃이 편리하다 */
+    grid-template-rows: [main-start]100px[content-start] auto[content-end ad-start] 50px [ad-end] 40px [main-end];
+}
+
+.container>div {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    grid-column: main;
+    background: rgba(100, 180, 230, 0.8);
+    display: flex;
+    justify-content: space-evenly
+}
+
+.header>div:nth-child(3) {
+    margin-left: auto;
+}
+
+.menu {
+    background: rgba(250, 70, 80, 0.7);
+}
+
+.content {
+    grid-area: content;
+    /* 네 변이 모두 정의되어 있다면 area로 지칭할 수 있다.
+    column이나 row 대신에. */
+    background: rgba(0, 220, 200, 0.5);
+}
+
+.ad {
+    grid-column: main;
+    background: rgba(144, 218, 202, 0.5);
+}
+
+.footer {
+    grid-column: main;
+    background: rgba(240, 150, 20, 0.5);
+}

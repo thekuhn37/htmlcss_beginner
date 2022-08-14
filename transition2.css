@@ -1,0 +1,47 @@
+/* Transition 2
+
+transition : property(ex. all) duration transition-timing-function delay
+ease, ease-in, ease-out, linear, ease-in-out*/
+
+
+
+div {
+    width: 100px;
+    height: 100px;
+    background: rgb(18, 108, 182);
+    color: white;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+div:hover {
+    transform: translateX(50px);
+}
+
+.ease {
+    transition: all 2s ease;
+    transition-timing-function: ease;
+}
+
+.linear {
+    transition: all 2s ease;
+    transition-timing-function: linear;
+}
+
+.ease-in {
+    transition: all 2s ease;
+    transition-timing-function: ease;
+}
+
+.ease-out {
+    transition: all 2s ease;
+    transition-timing-function: ease;
+}
+
+.ease-in-out {
+    transition: all 2s ease;
+    transition-timing-function: ease;
+}
